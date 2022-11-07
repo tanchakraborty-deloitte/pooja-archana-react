@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import {
     MDBCard,
     MDBCardImage,
@@ -25,7 +26,11 @@ function CategoryCards() {
                         </a>
                     </MDBRipple>
                     <MDBCardBody>
-                        <MDBCardTitle>Card title</MDBCardTitle>
+                        <MDBCardTitle>
+                            <Link to='/mythology'>
+                                Mtthology Stories
+                            </Link>
+                        </MDBCardTitle>
                         <MDBCardText>
                             Some quick example text to build on the card title and make up the bulk of the card's content.
                         </MDBCardText>
@@ -42,7 +47,11 @@ function CategoryCards() {
                         </a>
                     </MDBRipple>
                     <MDBCardBody>
-                        <MDBCardTitle>Card title</MDBCardTitle>
+                        <MDBCardTitle>
+                            <Link to='/temples'>
+                                Temples
+                            </Link>
+                        </MDBCardTitle>
                         <MDBCardText>
                             Some quick example text to build on the card title and make up the bulk of the card's content.
                         </MDBCardText>
@@ -59,7 +68,11 @@ function CategoryCards() {
                         </a>
                     </MDBRipple>
                     <MDBCardBody>
-                        <MDBCardTitle>Card title</MDBCardTitle>
+                        <MDBCardTitle>
+                            <Link to='/festivals'>
+                                Festivals & Cultures
+                            </Link>
+                        </MDBCardTitle>
                         <MDBCardText>
                             Some quick example text to build on the card title and make up the bulk of the card's content.
                         </MDBCardText>
@@ -68,6 +81,7 @@ function CategoryCards() {
             </MDBCol>
 
         </MDBRow>
+
     );
 }
 

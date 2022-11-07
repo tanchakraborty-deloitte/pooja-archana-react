@@ -42,7 +42,7 @@ function Navbar() {
                     <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
 
                         <MDBNavbarItem>
-                            <MDBNavbarLink active className='fs-5' aria-current='page' href='#'>
+                            <MDBNavbarLink active className='fs-5' aria-current='page' href='/'>
                                 Home
                             </MDBNavbarLink>
                         </MDBNavbarItem>
@@ -75,7 +75,7 @@ function Navbar() {
                         </MDBInputGroup>
 
                         <MDBNavbarItem>
-                            <MDBNavbarLink className='fs-5 ms-3' active aria-current='page' href='#'>
+                            <MDBNavbarLink className='fs-5 ms-3' active aria-current='page' href='/signin'>
                                 <MDBBtn color='light'>
                                     Login
                                 </MDBBtn>
@@ -83,7 +83,7 @@ function Navbar() {
                         </MDBNavbarItem>
 
                         <MDBNavbarItem>
-                            <MDBNavbarLink active className='fs-5 ms-3' aria-current='page' href='#'>
+                            <MDBNavbarLink active className='fs-5 ms-3' aria-current='page' href='/signup'>
                                 <MDBBtn color='dark'>
                                     Register
                                 </MDBBtn>

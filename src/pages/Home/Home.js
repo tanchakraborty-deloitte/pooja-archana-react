@@ -6,6 +6,7 @@ import CategoryCards from '../../components/CategoryCards'
 import NewStoriesCard from '../../components/NewStoriesCard'
 import About from '../../components/About'
 import Footer from '../../components/Footer'
+import { MDBContainer } from 'mdb-react-ui-kit'
 
 // import './Home.css'
 
@@ -14,30 +15,23 @@ function Home() {
         <>
             <Navbar />
 
-            <section>
-                <Carousel />
-            </section>
+            <Carousel />
 
-            <section>
-                <section className='pt-5 pb-5'>
-                    <p className='text-center fw-normal fs-2'>Choose a Category</p>
-                </section>
-                <CategoryCards />
-            </section>
+            <MDBContainer className='pt-5 pb-5'>
+                <p className='text-center fw-normal fs-2'>Choose a Category</p>
+            </MDBContainer>
+            <CategoryCards />
 
-            <section>
-                <section className='pt-5 pb-5'>
-                    <p className='text-center fw-normal fs-2'>New stories to read</p>
-                </section>
-                <NewStoriesCard />
-            </section>
+            <MDBContainer className='pt-5 pb-5'>
+                <p className='text-center fw-normal fs-2'>New stories to read</p>
+            </MDBContainer>
+            <NewStoriesCard />
 
-            <section>
-                <section className='pt-5 pb-5'>
-                    <p className='text-center fw-normal fs-2'>About Us</p>
-                </section>
-                <About />
-            </section>
+            <MDBContainer className='pt-5 pb-5'>
+                <p className='text-center fw-normal fs-2'>About Us</p>
+            </MDBContainer>
+            <About />
+
 
             <Footer />
 
